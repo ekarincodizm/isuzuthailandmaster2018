@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/psl245pro-webfont.eot');
+    src: url('../fonts/psl245pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl245pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl245pro-webfont.woff') format('woff'),
+         url('../fonts/psl245pro-webfont.ttf') format('truetype'),
+         url('../fonts/psl245pro-webfont.svg#kittithada_bold_65regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'med';
+    src: url('../fonts/psl244pro-webfont.eot');
+    src: url('../fonts/psl244pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl244pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl244pro-webfont.woff') format('woff'),
+         url('../fonts/psl244pro-webfont.ttf') format('truetype'),
+         url('../fonts/psl244pro-webfont.svg#kittithada_medium_65regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/psl242pro-webfont.eot');
+    src: url('../fonts/psl242pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl242pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl242pro-webfont.woff') format('woff'),
+         url('../fonts/psl242pro-webfont.ttf') format('truetype'),
+         url('../fonts/psl242pro-webfont.svg#kittithada_roman_55regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'display';
+    src: url('../fonts/psl029pro-webfont.eot');
+    src: url('../fonts/psl029pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl029pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl029pro-webfont.woff') format('woff'),
+         url('../fonts/psl029pro-webfont.ttf') format('truetype'),
+         url('../fonts/psl029pro-webfont.svg#psl_display_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'display-bold';
+    src: url('../fonts/psl030pro-webfont.eot');
+    src: url('../fonts/psl030pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl030pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl030pro-webfont.woff') format('woff'),
+         url('../fonts/psl030pro-webfont.ttf') format('truetype'),
+         url('../fonts/psl030pro-webfont.svg#psl_display_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

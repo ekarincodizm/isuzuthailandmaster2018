@@ -1,0 +1,251 @@
+[07-Mar-2018 16:32:28 Asia/Bangkok] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/devwwwisuzutis/public_html/thailandmaster/config/web.php:2) in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Session.php on line 137
+[07-Mar-2018 16:32:28 Asia/Bangkok] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/devwwwisuzutis/public_html/thailandmaster/config/web.php on line 2.' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "thailandmaster/".' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('thailandmaster/', Array)
+#1 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,th;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1510370565.1516941945; _gid=GA1.2.862569369.1520220492; _td=bc397be4-ea7f-4803-a24c-2ccd6ff7a1e1; qtrans_front_language=th; PHPSESSID=qkkkvchk72ro38531or7uiejn6',
+    'HTTP_HOST' => 'dev.www.isuzu-tis.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php56/root/etc:/opt/cpanel/ea-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'REDIRECT_SCRIPT_URL' => '/thailandmaster/',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Wp@xrCOw2kcGoeckRt-PVgAAAVU',
+    'REDIRECT_URL' => '/thailandmaster/',
+    'REMOTE_ADDR' => '203.154.20.125',
+    'REMOTE_PORT' => '56530',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/thailandmaster/',
+    'SCRIPT_FILENAME' => '/home/devwwwisuzutis/public_html/thailandmaster/web/index.php',
+    'SCRIPT_NAME' => '/thailandmaster/web/index.php',
+    'SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'SCRIPT_URL' => '/thailandmaster/',
+    'SERVER_ADDR' => '27.254.36.12',
+    'SERVER_ADMIN' => 'webmaster@dev.www.isuzu-tis.com',
+    'SERVER_NAME' => 'dev.www.isuzu-tis.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Bangkok',
+    'UNIQUE_ID' => 'Wp@xrCOw2kcGoeckRt-PVgAAAVU',
+    'PHP_SELF' => '/thailandmaster/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1520415148.1197960376739501953125,
+    'REQUEST_TIME' => 1520415148,
+    'argv' => [],
+    'argc' => 0,
+]
+[07-Mar-2018 09:32:55 UTC] PHP Fatal error:  Class 'yii\web\Application' not found in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 12
+[07-Mar-2018 09:32:56 UTC] PHP Fatal error:  Class 'yii\web\Application' not found in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 12
+[07-Mar-2018 09:52:09 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:10 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:11 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:11 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:22 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:22 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:23 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:23 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:23 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:23 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:24 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:25 UTC] PHP Warning:  require(/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 09:52:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/devwwwisuzutis/public_html/thailandmaster/web../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devwwwisuzutis/public_html/thailandmaster/web/index.php on line 7
+[07-Mar-2018 17:11:59 Asia/Bangkok] An Error occurred while handling another error:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\View::redirect()' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php(56): yii\base\Component->__call('redirect', Array)
+#1 /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php(56): yii\web\View->redirect(Array)
+#2 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/View.php(336): require('/home/devwwwisu...')
+#3 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/home/devwwwisu...', Array)
+#4 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/devwwwisu...', Array, Object(app\controllers\SiteController))
+#5 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#6 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#7 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#8 [internal function]: yii\web\ErrorAction->run()
+#9 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#12 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#13 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#14 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#15 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "thailandmaster/".' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('thailandmaster/', Array)
+#1 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,th;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1510370565.1516941945; _gid=GA1.2.862569369.1520220492; _td=bc397be4-ea7f-4803-a24c-2ccd6ff7a1e1; qtrans_front_language=th; PHPSESSID=qkkkvchk72ro38531or7uiejn6',
+    'HTTP_HOST' => 'dev.www.isuzu-tis.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php56/root/etc:/opt/cpanel/ea-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'REDIRECT_SCRIPT_URL' => '/thailandmaster/',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Wp@67-O9ybBALENDb7cswAAAARA',
+    'REDIRECT_URL' => '/thailandmaster/',
+    'REMOTE_ADDR' => '27.145.54.80',
+    'REMOTE_PORT' => '61460',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/thailandmaster/',
+    'SCRIPT_FILENAME' => '/home/devwwwisuzutis/public_html/thailandmaster/web/index.php',
+    'SCRIPT_NAME' => '/thailandmaster/web/index.php',
+    'SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'SCRIPT_URL' => '/thailandmaster/',
+    'SERVER_ADDR' => '27.254.36.12',
+    'SERVER_ADMIN' => 'webmaster@dev.www.isuzu-tis.com',
+    'SERVER_NAME' => 'dev.www.isuzu-tis.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Bangkok',
+    'UNIQUE_ID' => 'Wp@67-O9ybBALENDb7cswAAAARA',
+    'PHP_SELF' => '/thailandmaster/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1520417519.1418950557708740234375,
+    'REQUEST_TIME' => 1520417519,
+    'argv' => [],
+    'argc' => 0,
+]
+[07-Mar-2018 17:12:32 Asia/Bangkok] An Error occurred while handling another error:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\View::redirect()' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php(56): yii\base\Component->__call('redirect', Array)
+#1 /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php(56): yii\web\View->redirect(Array)
+#2 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/View.php(336): require('/home/devwwwisu...')
+#3 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/home/devwwwisu...', Array)
+#4 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/devwwwisu...', Array, Object(app\controllers\SiteController))
+#5 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#6 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#7 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#8 [internal function]: yii\web\ErrorAction->run()
+#9 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#12 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#13 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#14 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#15 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "thailandmaster/".' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('thailandmaster/', Array)
+#1 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/devwwwisuzutis/public_html/thailandmaster/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/devwwwisuzutis/public_html/thailandmaster/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/devwwwisuzutis/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,th;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_ga=GA1.2.1510370565.1516941945; _gid=GA1.2.862569369.1520220492; _td=bc397be4-ea7f-4803-a24c-2ccd6ff7a1e1; qtrans_front_language=th; PHPSESSID=qkkkvchk72ro38531or7uiejn6',
+    'HTTP_HOST' => 'dev.www.isuzu-tis.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php56/root/etc:/opt/cpanel/ea-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'REDIRECT_SCRIPT_URL' => '/thailandmaster/',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Wp@7EPO9ybBALENDb7cswQAAARE',
+    'REDIRECT_URL' => '/thailandmaster/',
+    'REMOTE_ADDR' => '27.145.54.80',
+    'REMOTE_PORT' => '61508',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/thailandmaster/',
+    'SCRIPT_FILENAME' => '/home/devwwwisuzutis/public_html/thailandmaster/web/index.php',
+    'SCRIPT_NAME' => '/thailandmaster/web/index.php',
+    'SCRIPT_URI' => 'http://dev.www.isuzu-tis.com/thailandmaster/',
+    'SCRIPT_URL' => '/thailandmaster/',
+    'SERVER_ADDR' => '27.254.36.12',
+    'SERVER_ADMIN' => 'webmaster@dev.www.isuzu-tis.com',
+    'SERVER_NAME' => 'dev.www.isuzu-tis.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Bangkok',
+    'UNIQUE_ID' => 'Wp@7EPO9ybBALENDb7cswQAAARE',
+    'PHP_SELF' => '/thailandmaster/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1520417552.1144430637359619140625,
+    'REQUEST_TIME' => 1520417552,
+    'argv' => [],
+    'argc' => 0,
+]
+[08-Mar-2018 10:29:10 Asia/Bangkok] PHP Fatal error:  Class 'app\controllers\CFile' not found in /home/devwwwisuzutis/public_html/thailandmaster/controllers/RegisterController.php on line 250
+[08-Mar-2018 10:29:53 Asia/Bangkok] PHP Fatal error:  Class 'app\controllers\CFile' not found in /home/devwwwisuzutis/public_html/thailandmaster/controllers/RegisterController.php on line 250
+[08-Mar-2018 10:29:54 Asia/Bangkok] PHP Fatal error:  Class 'app\controllers\CFile' not found in /home/devwwwisuzutis/public_html/thailandmaster/controllers/RegisterController.php on line 250
+[08-Mar-2018 10:29:55 Asia/Bangkok] PHP Fatal error:  Class 'app\controllers\CFile' not found in /home/devwwwisuzutis/public_html/thailandmaster/controllers/RegisterController.php on line 250
+[08-Mar-2018 11:51:02 Asia/Bangkok] PHP Parse error:  syntax error, unexpected 'date' (T_STRING) in /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php on line 112
+[08-Mar-2018 11:51:15 Asia/Bangkok] PHP Parse error:  syntax error, unexpected ',' in /home/devwwwisuzutis/public_html/thailandmaster/views/layouts/main.php on line 112
